@@ -16,6 +16,7 @@ Future<void> sendEmail({
   required String firstName,
   required String lastName,
 }) async {
+  await dotenv.load();
   String? serviceId = dotenv.env['SERVICE_ID'];
   String? templateId = dotenv.env['TEMPLATE_ID'];
   String? userId = dotenv.env['USER_ID'];
