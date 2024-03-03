@@ -1195,7 +1195,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                       width: 20,
                                     ),
                                     Text(
-                                      "+91 79059 81040",
+                                      "+91 7905981040",
                                       style: GoogleFonts.muktaMalar(
                                           fontSize: 15,
                                           fontWeight: FontWeight.w700,

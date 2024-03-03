@@ -259,7 +259,7 @@ class _WebisteState extends State<Webiste> {
                                       SizedBox(
                                         width: 600,
                                         child: Text(
-                                          "As a tight-knit team of experts, we create memorable and emotional websites, digital experiences and native apps.",
+                                          "As a tight-knit team of experts, we create memorable and emotional websites, digital experiences, and native apps.",
                                           style: GoogleFonts.muktaMalar(
                                             fontSize: 22,
                                           ),
