@@ -1336,6 +1336,32 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                         lastName: lastNameController.text,
                                         phoneNo: phoneNumberController.text,
                                         body: messageController.text);
+                                    emailController.text = "";
+                                    firstNameController.text = "";
+                                    lastNameController.text = "";
+                                    phoneNumberController.text = "";
+                                    messageController.text = "";
+                                    showDialog(
+                                        context: context,
+                                        builder: (context) {
+                                          return AlertDialog(
+                                            title: Text(
+                                              "Congrats :)",
+                                              style: TextStyle(
+                                                  color: Colors.green,
+                                                  fontSize: 20),
+                                            ),
+                                            content: Text(
+                                                "Email is sent successfully! :)"),
+                                            actions: [
+                                              TextButton(
+                                                  child: Text("Close"),
+                                                  onPressed: () {
+                                                    Navigator.pop(context);
+                                                  })
+                                            ],
+                                          );
+                                        });
                                   }
                                 },
                                 child: Text(
