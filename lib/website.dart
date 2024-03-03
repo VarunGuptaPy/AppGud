@@ -77,7 +77,7 @@ class _WebisteState extends State<Webiste> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Image.asset(
-                                    "DDB_Logo.png",
+                                    "assets/DDB_Logo.png",
                                     height: 120,
                                     fit: BoxFit.cover,
                                   ),
