@@ -1,4 +1,4 @@
-import 'package:ddb_technology/globals.dart';
+import 'package:Appgud/globals.dart';
 import 'package:flutter/material.dart';
 
 class CirclePainter extends CustomPainter {

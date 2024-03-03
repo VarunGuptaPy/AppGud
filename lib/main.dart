@@ -1,8 +1,8 @@
-import 'package:ddb_technology/website.dart';
+import 'package:Appgud/website.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-Future<void> main() async{
+Future<void> main() async {
   await dotenv.load(fileName: "config/.env");
   runApp(const MyApp());
 }
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ThemeData',
+      title: 'AppGud',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
