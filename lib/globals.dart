@@ -17,9 +17,9 @@ Future<void> sendEmail({
   required String lastName,
 }) async {
   await dotenv.load();
-  String? serviceId = dotenv.env['SERVICE_ID'];
-  String? templateId = dotenv.env['TEMPLATE_ID'];
-  String? userId = dotenv.env['USER_ID'];
+  String serviceId = "service_h9n6lro";
+  String templateId = "template_3g25yo3";
+  String userId = "hwasKhYw8dsoBt-sM";
 
   final url = Uri.parse("https://api.emailjs.com/api/v1.0/email/send");
   final response = await http.post(url,

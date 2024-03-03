@@ -30,8 +30,3 @@ jobs:
       with:
         github_token: ${{ secrets.GH_Token }}
         publish_dir: ./build/web
-    - name: Create .env file
-      run: |
-        echo "SERVICE_ID=${{ secrets.SERVICE_ID }}" > .env
-        echo "TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> .env
-        echo "USER_ID=${{ secrets.USER_ID }}" >> .env
