@@ -1,9 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:http/http.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 
 Color primaryColor = Color(0xff13EBCA);
@@ -16,9 +14,9 @@ Future<void> sendEmail({
   required String firstName,
   required String lastName,
 }) async {
-  String? serviceId = dotenv.env['SERVICE_ID'];
-  String? templateId = dotenv.env['TEMPLATE_ID'];
-  String? userId = dotenv.env['USER_ID'];
+  String? serviceId = Platform.environment['SERVICE_ID'];
+  String? templateId = Platform.environment['TEMPLATE_ID'];
+  String? userId = Platform.environment['USER_ID'];
 
   final url = Uri.parse("https://api.emailjs.com/api/v1.0/email/send");
   final response = await http.post(url,
