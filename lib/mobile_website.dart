@@ -189,7 +189,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                         ConstrainedBox(
                           constraints: BoxConstraints(maxWidth: 500),
                           child: Text(
-                            "As a tight-knit team of experts, we create memorable and emotional websites,digital experiences, and native apps",
+                            "As a tight-knit team of experts, we create memorable and emotional websites, digital experiences and native apps",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -1195,7 +1195,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                       width: 20,
                                     ),
                                     Text(
-                                      "+91 9876543210",
+                                      "+91 79059 81040",
                                       style: GoogleFonts.muktaMalar(
                                           fontSize: 15,
                                           fontWeight: FontWeight.w700,
@@ -1219,7 +1219,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                     width: 20,
                                   ),
                                   Text(
-                                    "info@ddbtechnologylab.com",
+                                    "info@appgud.com",
                                     style: GoogleFonts.muktaMalar(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w700,
