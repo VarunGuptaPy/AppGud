@@ -22,7 +22,7 @@ class _GetInTouchInputState extends State<GetInTouchInput> {
     return SizedBox(
       width: MediaQuery.of(context).size.width >= 1300
           ? 250
-          : MediaQuery.of(context).size.width * 0.38,
+          : MediaQuery.of(context).size.width * 0.30,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

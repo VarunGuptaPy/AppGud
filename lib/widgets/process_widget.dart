@@ -63,8 +63,8 @@ class ProcessWidget extends StatelessWidget {
         ),
         ConstrainedBox(
           constraints: BoxConstraints(
-            maxWidth: MediaQuery.of(context).size.width > 356
-                ? 350
+            maxWidth: MediaQuery.of(context).size.width > 470
+                ? 470
                 : MediaQuery.of(context).size.width * 0.9,
           ),
           child: Text(
@@ -82,8 +82,8 @@ class ProcessWidget extends StatelessWidget {
         ),
         ConstrainedBox(
           constraints: BoxConstraints(
-              maxWidth: MediaQuery.of(context).size.width > 356
-                  ? 350
+              maxWidth: MediaQuery.of(context).size.width > 470
+                  ? 470
                   : MediaQuery.of(context).size.width * 0.9),
           child: Text(
             description!,

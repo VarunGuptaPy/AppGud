@@ -45,9 +45,16 @@ class _MobileWebsiteState extends State<MobileWebsite> {
         child: ListView(
           children: [
             ListTile(
+              trailing: IconButton(
+                icon: Icon(Icons.close),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
               onTap: () {
                 scrollController.animateTo(0,
                     duration: Duration(seconds: 1), curve: Curves.easeOut);
+                Navigator.pop(context);
               },
               title: Text(
                 "Home",
@@ -60,6 +67,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
               onTap: () {
                 scrollController.animateTo(789,
                     duration: Duration(seconds: 1), curve: Curves.easeOut);
+                Navigator.pop(context);
               },
               title: Text(
                 "About",
@@ -72,6 +80,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
               onTap: () {
                 scrollController.animateTo(3430,
                     duration: Duration(seconds: 1), curve: Curves.easeOut);
+                Navigator.pop(context);
               },
               title: Text(
                 "Services",
@@ -84,6 +93,7 @@ class _MobileWebsiteState extends State<MobileWebsite> {
               onTap: () {
                 scrollController.animateTo(6519,
                     duration: Duration(seconds: 1), curve: Curves.easeOut);
+                Navigator.pop(context);
               },
               title: Text(
                 "Contact Us",
@@ -219,7 +229,11 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                     "Get A Quote",
                                     style: GoogleFonts.muktaMalar(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize:
+                                          MediaQuery.of(context).size.width >
+                                                  380
+                                              ? 20
+                                              : 16,
                                     ),
                                   )),
                             ),
@@ -615,7 +629,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                             child: Text(
                                               "UX & UI DESIGN",
                                               style: GoogleFonts.muktaMalar(
-                                                  fontSize: 12),
+                                                  fontSize:
+                                                      MediaQuery.of(context)
+                                                                  .size
+                                                                  .width >
+                                                              380
+                                                          ? 12
+                                                          : 8),
                                             ),
                                           )),
                                       SizedBox(
@@ -635,7 +655,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                             child: Text(
                                               "Packaging Design",
                                               style: GoogleFonts.muktaMalar(
-                                                  fontSize: 12),
+                                                  fontSize:
+                                                      MediaQuery.of(context)
+                                                                  .size
+                                                                  .width >
+                                                              380
+                                                          ? 12
+                                                          : 8),
                                             ),
                                           )),
                                     ],
@@ -656,7 +682,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                             child: Text(
                                               "Marketing Collateral",
                                               style: GoogleFonts.muktaMalar(
-                                                  fontSize: 12),
+                                                  fontSize:
+                                                      MediaQuery.of(context)
+                                                                  .size
+                                                                  .width >
+                                                              380
+                                                          ? 12
+                                                          : 8),
                                             ),
                                           )),
                                       SizedBox(
@@ -676,7 +708,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                             child: Text(
                                               "Illustration",
                                               style: GoogleFonts.muktaMalar(
-                                                  fontSize: 12),
+                                                  fontSize:
+                                                      MediaQuery.of(context)
+                                                                  .size
+                                                                  .width >
+                                                              380
+                                                          ? 12
+                                                          : 8),
                                             ),
                                           )),
                                     ],
@@ -765,7 +803,8 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                         "DEVELOPMENT",
                         style: TextStyle(
                           fontFamily: "NotoSerif",
-                          fontSize: 50,
+                          fontSize:
+                              MediaQuery.of(context).size.width > 412 ? 50 : 40,
                         ),
                       ),
                       Container(
@@ -833,7 +872,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                               child: Text(
                                                 "Websites",
                                                 style: GoogleFonts.muktaMalar(
-                                                    fontSize: 12),
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                    .size
+                                                                    .width >
+                                                                380
+                                                            ? 12
+                                                            : 8),
                                               ),
                                             )),
                                         SizedBox(
@@ -855,7 +900,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                               child: Text(
                                                 "WebApps",
                                                 style: GoogleFonts.muktaMalar(
-                                                    fontSize: 12),
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                    .size
+                                                                    .width >
+                                                                380
+                                                            ? 12
+                                                            : 8),
                                               ),
                                             )),
                                         SizedBox(
@@ -877,7 +928,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                               child: Text(
                                                 "MVPs",
                                                 style: GoogleFonts.muktaMalar(
-                                                    fontSize: 12),
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                    .size
+                                                                    .width >
+                                                                380
+                                                            ? 12
+                                                            : 8),
                                               ),
                                             )),
                                       ],
@@ -903,7 +960,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                               child: Text(
                                                 "Mobile Applications",
                                                 style: GoogleFonts.muktaMalar(
-                                                    fontSize: 12),
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                    .size
+                                                                    .width >
+                                                                380
+                                                            ? 12
+                                                            : 8),
                                               ),
                                             )),
                                         SizedBox(
@@ -925,7 +988,13 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                               child: Text(
                                                 "Custom Software",
                                                 style: GoogleFonts.muktaMalar(
-                                                    fontSize: 12),
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                    .size
+                                                                    .width >
+                                                                380
+                                                            ? 12
+                                                            : 8),
                                               ),
                                             )),
                                       ],
@@ -995,7 +1064,12 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                       horizontal: 8.0, vertical: 2.0),
                                   child: Text(
                                     "Brand Logo",
-                                    style: GoogleFonts.muktaMalar(fontSize: 12),
+                                    style: GoogleFonts.muktaMalar(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width >
+                                                    380
+                                                ? 12
+                                                : 8),
                                   ),
                                 )),
                             SizedBox(
@@ -1013,7 +1087,12 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                       horizontal: 8.0, vertical: 2.0),
                                   child: Text(
                                     "Brand Identity",
-                                    style: GoogleFonts.muktaMalar(fontSize: 12),
+                                    style: GoogleFonts.muktaMalar(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width >
+                                                    380
+                                                ? 12
+                                                : 8),
                                   ),
                                 )),
                             SizedBox(
@@ -1031,7 +1110,12 @@ class _MobileWebsiteState extends State<MobileWebsite> {
                                       horizontal: 8.0, vertical: 2.0),
                                   child: Text(
                                     "Visual Identity",
-                                    style: GoogleFonts.muktaMalar(fontSize: 12),
+                                    style: GoogleFonts.muktaMalar(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width >
+                                                    380
+                                                ? 12
+                                                : 8),
                                   ),
                                 )),
                           ]),

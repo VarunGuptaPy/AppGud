@@ -889,7 +889,7 @@ class _WebisteState extends State<Webiste> {
                                                 "DEVELOPMENT",
                                                 softWrap: true,
                                                 style: GoogleFonts.muktaMalar(
-                                                  fontSize: 22,
+                                                  fontSize: 20,
                                                   color: Colors.white,
                                                 ),
                                               ),
